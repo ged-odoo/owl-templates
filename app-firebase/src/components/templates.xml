@@ -1,0 +1,156 @@
+<templates>
+  <div t-name="App">
+    <Navigation />
+    <hr/>
+    <t t-routecomponent="1"/>
+  </div>
+
+  <div t-name="Navigation">
+    <ul>
+        <t t-if="env.session.authUser">
+            <li><Link to="'LANDING'">Landing</Link></li>
+            <li><Link to="'HOME'">Home</Link></li>
+            <li><Link to="'ACCOUNT'">Account</Link></li>
+            <li><Link to="'ADMIN'">Admin</Link></li>
+            <li><SignOutButton/></li>
+        </t>
+        <t t-else="1">
+            <li><Link to="'LANDING'">Landing</Link></li>
+            <li><Link to="'SIGN_IN'">Sign In</Link></li>
+        </t>
+    </ul>
+  </div>
+
+  <div t-name="Landing">
+    Landing...
+  </div>
+
+  <div t-name="Home">
+    Home...
+  </div>
+
+  <div t-name="Account">
+    <h1>Account</h1>
+    <div>Email: <t t-esc="env.session.authUser.email"/></div>
+    <PasswordChange/>
+  </div>
+
+  <div t-name="Admin">
+    Admin...
+  </div>
+
+  <div t-name="SignIn">
+    <h1>Sign In</h1>
+      <form t-on-submit="onSubmit">
+        <input
+          name="email"
+          t-model="email"
+          type="text"
+          placeholder="Email Address"
+        />
+        <input
+          name="password"
+          t-model="password"
+          type="password"
+          placeholder="Password"
+        />
+        <button type="submit" t-att-disabled="isInvalid">
+          Sign In
+        </button>
+        <p t-if="state.error">
+            <t t-esc="state.error.message"/>
+        </p>
+      </form>
+      <PasswordForgetLink/>
+    <p>
+        Don't have an account? <Link to="'SIGN_UP'">Sign Up</Link>
+    </p>
+  </div>
+
+  <div t-name="SignUp">
+    <h1>Sign Up</h1>
+      <form t-on-submit="onSubmit">
+        <input
+          name="username"
+          t-model="username"
+          type="text"
+          placeholder="Full Name"
+        />
+        <input
+          name="email"
+          t-model="email"
+          type="text"
+          placeholder="Email"
+        />
+        <input
+          name="passwordOne"
+          t-model="passwordOne"
+          type="password"
+          placeholder="Password"
+        />
+        <input
+          name="passwordTwo"
+          t-model="passwordTwo"
+          type="password"
+          placeholder="Password"
+        />
+        <button type="submit" t-att-disabled="isInvalid">
+          Sign Up
+        </button>
+        <p t-if="state.error">
+            <t t-esc="state.error.message"/>
+        </p>
+      </form>
+  </div>
+
+  <button t-name="SignOutButton" t-on-click="signOut">
+    Sign Out
+  </button>
+
+  <div t-name="PasswordForget">
+    <h1>Forgot your password?</h1>
+      <form t-on-submit="onSubmit">
+        <input
+          name="email"
+          t-model="email"
+          type="text"
+          placeholder="Email Address"
+        />
+        <button type="submit" t-att-disabled="!state.email">
+          Reset My Password
+        </button>
+        <p t-if="state.error">
+            <t t-esc="state.error.message"/>
+        </p>
+      </form>
+  </div>
+
+  <p t-name="PasswordForgetLink">
+    <Link to="'PASSWORD_FORGET'">Forgot password?</Link>
+  </p>
+
+  <div t-name="PasswordChange">
+    <h1>Update your password</h1>
+      <form t-on-submit="onSubmit">
+        <input
+          name="passwordOne"
+          t-model="passwordOne"
+          type="password"
+          placeholder="New Password"
+        />
+        <input
+          name="passwordTwo"
+          t-model="passwordTwo"
+          type="password"
+          placeholder="Confirm New Password"
+        />
+        <button type="submit" t-att-disabled="isInvalid">
+          Update My Password
+        </button>
+        <p t-if="state.error">
+            <t t-esc="state.error.message"/>
+        </p>
+      </form>
+  </div>
+
+</templates>

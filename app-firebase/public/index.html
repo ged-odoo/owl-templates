@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+  </head>
+  <body>
+    <script>
+        window.fireBaseConfig = {
+            apiKey: "<%= htmlWebpackPlugin.options.apiKeys.API_KEY %>",
+            authDomain: "<%= htmlWebpackPlugin.options.apiKeys.AUTH_DOMAIN %>",
+            databaseURL: "<%= htmlWebpackPlugin.options.apiKeys.DATABASE_URL %>",
+            projectId: "<%= htmlWebpackPlugin.options.apiKeys.PROJECT_ID %>",
+            storageBucket: "<%= htmlWebpackPlugin.options.apiKeys.STORAGE_BUCKET %>",
+            messagingSenderId: "<%= htmlWebpackPlugin.options.apiKeys.MESSAGE_SENDER_ID %>",
+            appId: "<%= htmlWebpackPlugin.options.apiKeys.APP_ID %>",
+        };
+    </script>
+  </body>
+</html>

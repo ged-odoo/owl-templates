@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Various authentication flows can load page 1`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/home\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div><hr><div> Landing... </div></div>"`;
+
+exports[`Various authentication flows can load page 2`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/home\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div><hr><div> Landing... </div></div>"`;
+
+exports[`Various authentication flows can sign in 1`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"\\">Landing</a></li><li><a href=\\"/signin\\" class=\\"router-link-active\\">Sign In</a></li></ul></div><hr><div><h1>Sign In</h1><form><input name=\\"email\\" type=\\"text\\" placeholder=\\"Email Address\\"><input name=\\"password\\" type=\\"password\\" placeholder=\\"Password\\"><button type=\\"submit\\" disabled=\\"\\"> Sign In </button></form><p><a href=\\"/pw-forget\\">Forgot password?</a></p><p> Don't have an account? <a href=\\"/signup\\">Sign Up</a></p></div></div>"`;
+
+exports[`Various authentication flows can sign in 2`] = `"<div><div><ul><li><a href=\\"/\\">Landing</a></li><li><a href=\\"/home\\" class=\\"router-link-active\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div><hr><div> Home... </div></div>"`;
+
+exports[`Various authentication flows can sign out from home page 1`] = `"<div><div><ul><li><a href=\\"/\\">Landing</a></li><li><a href=\\"/home\\" class=\\"router-link-active\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div><hr><div> Home... </div></div>"`;
+
+exports[`Various authentication flows can sign out from home page 2`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/signin\\">Sign In</a></li></ul></div><hr><div> Landing... </div></div>"`;
+
+exports[`Various authentication flows can sign out from landing page 1`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/home\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div><hr><div> Landing... </div></div>"`;
+
+exports[`Various authentication flows can sign out from landing page 2`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/signin\\">Sign In</a></li></ul></div><hr><div> Landing... </div></div>"`;
+
+exports[`Various authentication flows can sign up 1`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/signin\\">Sign In</a></li></ul></div><hr><div> Landing... </div></div>"`;
+
+exports[`Various authentication flows can sign up 2`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"\\">Landing</a></li><li><a href=\\"/signin\\" class=\\"router-link-active\\">Sign In</a></li></ul></div><hr><div><h1>Sign In</h1><form><input name=\\"email\\" type=\\"text\\" placeholder=\\"Email Address\\"><input name=\\"password\\" type=\\"password\\" placeholder=\\"Password\\"><button type=\\"submit\\" disabled=\\"\\"> Sign In </button></form><p><a href=\\"/pw-forget\\">Forgot password?</a></p><p> Don't have an account? <a href=\\"/signup\\">Sign Up</a></p></div></div>"`;
+
+exports[`Various authentication flows can sign up 3`] = `"<div><div><ul><li><a href=\\"/\\" class=\\"\\">Landing</a></li><li><a href=\\"/signin\\" class=\\"\\">Sign In</a></li></ul></div><hr><div><h1>Sign Up</h1><form><input name=\\"username\\" type=\\"text\\" placeholder=\\"Full Name\\"><input name=\\"email\\" type=\\"text\\" placeholder=\\"Email\\"><input name=\\"passwordOne\\" type=\\"password\\" placeholder=\\"Password\\"><input name=\\"passwordTwo\\" type=\\"password\\" placeholder=\\"Password\\"><button type=\\"submit\\" disabled=\\"\\"> Sign Up </button></form></div></div>"`;
+
+exports[`Various authentication flows can sign up 4`] = `"<div><div><ul><li><a href=\\"/\\">Landing</a></li><li><a href=\\"/home\\" class=\\"router-link-active\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div><hr><div> Home... </div></div>"`;

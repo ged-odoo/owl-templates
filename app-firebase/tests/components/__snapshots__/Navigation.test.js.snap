@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation normal rendering with logged user 1`] = `"<div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/home\\">Home</a></li><li><a href=\\"/account\\">Account</a></li><li><a href=\\"/admin\\">Admin</a></li><li><button> Sign Out </button></li></ul></div>"`;
+
+exports[`Navigation normal rendering with no user 1`] = `"<div><ul><li><a href=\\"/\\" class=\\"router-link-active\\">Landing</a></li><li><a href=\\"/signin\\">Sign In</a></li></ul></div>"`;
