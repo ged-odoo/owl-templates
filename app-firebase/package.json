@@ -1,14 +1,13 @@
 {
-  "name": "owl-application",
+  "name": "owl-firebase-application",
   "version": "0.1.0",
-  "description": "Owl Application",
-  "private": true,
+  "description": "Owl Firebase Application",
   "scripts": {
     "test": "jest",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open"
   },
-  "author": "Gery Debongnie",
+  "author": "John",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
