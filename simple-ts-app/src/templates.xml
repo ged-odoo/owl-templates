@@ -1,0 +1,4 @@
+<templates>
+  <div t-name="App">Hello Owl
+  </div>
+</templates>
